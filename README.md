@@ -77,3 +77,15 @@ $ sail artisan db:seed --class=UserSeeder
 
 http://localhost に接続
 
+## breeze インストール
+### breeze 初期設定
+```
+$ sail npm install -D @types/node@^20.19.0
+$ sail composer require laravel/breeze --dev
+$ sail artisan breeze:install
+   React with Inertia
+   Dark mode
+   TypeScript
+   ESLint with Prettier
+   PHPUnit
+```
