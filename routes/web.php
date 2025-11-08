@@ -12,7 +12,14 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('home');
+
+Route::get('/users', function () {
+    $users = \App\Models\User::select('id', 'name', 'email')->get();
+    return Inertia::render('Users/Index', [
+        'users' => $users,
+    ]);
+})->name('users');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
