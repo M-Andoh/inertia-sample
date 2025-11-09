@@ -103,8 +103,11 @@ export default function Login({
                                     </Link>
                                 )}
                             </td>
-                            <td rowSpan={2} >
-                                <PrimaryButton className="ms-4" disabled={processing}>
+                            <td rowSpan={2}>
+                                <PrimaryButton
+                                    className="ms-4"
+                                    disabled={processing}
+                                >
                                     Log in
                                 </PrimaryButton>
                             </td>
@@ -122,7 +125,6 @@ export default function Login({
                             </td>
                         </tr>
                     </table>
-
                 </div>
             </form>
         </GuestLayout>

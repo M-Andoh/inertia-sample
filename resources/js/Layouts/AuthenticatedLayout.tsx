@@ -25,9 +25,7 @@ export default function Authenticated({
                                     <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
                                 </Link>
                             </div>
-                            <div>
-                                &nbsp;&nbsp;&nbsp;
-                            </div>
+                            <div>&nbsp;&nbsp;&nbsp;</div>
                             <div className="flex shrink-0 items-center">
                                 <NavLink
                                     href={route('users')}
